@@ -1,0 +1,66 @@
+﻿@model Code.Models.DiagnosisCode
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>DiagnosisCode</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.DiagnosisCode1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DiagnosisCode1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DiagnosisCode2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DiagnosisCode2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TreatmentCode1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TreatmentCode1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TreatmentCode2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TreatmentCode2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TreatmentCode3)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TreatmentCode3)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TreatmentCode4)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TreatmentCode4)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

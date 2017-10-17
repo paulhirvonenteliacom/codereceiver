@@ -1,0 +1,135 @@
+﻿@model IEnumerable<Code.Models.PersonInformation>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.PFirstName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PLastName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PStreetAddress)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PPostalCode)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PCity)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PPersonalNumber)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PPhoneNumberHome)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PPhoneNumberWork)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PPhoneNumberMobile)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PEmail)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SFirstName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SLastName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SStreetAddress)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SPostalCode)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SCity)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SOrganisationNumber)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SPhoneNumber)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SEmail)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.PFirstName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PLastName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PStreetAddress)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PPostalCode)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PCity)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PPersonalNumber)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PPhoneNumberHome)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PPhoneNumberWork)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PPhoneNumberMobile)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PEmail)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SFirstName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SLastName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SStreetAddress)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SPostalCode)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SCity)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SOrganisationNumber)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SPhoneNumber)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SEmail)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+        </td>
+    </tr>
+}
+
+</table>
